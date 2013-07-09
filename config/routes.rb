@@ -1,4 +1,6 @@
 Albums::Application.routes.draw do
+  get "tracks/index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
