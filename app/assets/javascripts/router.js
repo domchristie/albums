@@ -1,0 +1,1 @@
+Albums.Router = Backbone.Router.extend();
