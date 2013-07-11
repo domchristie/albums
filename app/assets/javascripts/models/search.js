@@ -1,0 +1,1 @@
+Albums.Search = Backbone.Model.extend();
