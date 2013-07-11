@@ -4,7 +4,8 @@ Albums.SearchView = Backbone.View.extend({
   template: JST['templates/search'],
   
   events: {
-    'input': 'input'
+    'input': 'input',
+    'submit': 'submit'
   },
   
   initialize: function() {
@@ -17,5 +18,10 @@ Albums.SearchView = Backbone.View.extend({
   
   input: function(evt) {
     this.model.set('username', evt.target.value);
+  },
+  
+  submit: function(evt) {
+    evt.preventDefault();
+    Albums.router.navigate('users/' + this.model.get('username'), { trigger: true });
   }
 });
