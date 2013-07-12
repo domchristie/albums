@@ -26,4 +26,16 @@
   font-family: 'Courier New', monospace;
   font-size: 13px;
   color: #fff;
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+     -moz-transition: opacity .3s;
+      -ms-transition: opacity .3s;
+       -o-transition: opacity .3s;
+          transition: opacity .3s;
+}
+
+.albums li:hover {
+  .album-name {
+    opacity: 1;
+  }
 }
