@@ -1,0 +1,8 @@
+<% for(var albumName in collection.albums()) { %>
+  <% if(collection.albums().hasOwnProperty(albumName) && albumName) { %>
+    <li>
+      <img src="<%= collection.albums()[albumName][0].get('imageUrl') %>" />
+      <%= albumName %>
+    </li>
+  <% } %>
+<% } %>

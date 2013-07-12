@@ -9,6 +9,10 @@ Albums.Router = Backbone.Router.extend({
   },
   
   showUser: function(username) {
-    
+    new Albums.ResultsView({ collection: Albums.tracks });
+    Albums.tracks.fetch({
+      data: { username: username },
+      reset: true
+    });
   }
 });
