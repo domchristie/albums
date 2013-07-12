@@ -1,4 +1,6 @@
 Albums::Application.routes.draw do
+  mount JasmineRails::Engine => "/specs" if defined?(JasmineRails)
+  
   resources :tracks, only: :index
 
   # The priority is based upon order of creation:
