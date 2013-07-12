@@ -5,7 +5,7 @@ Albums.Router = Backbone.Router.extend({
   },
   
   search: function() {
-    
+    $('.results').empty();
   },
   
   showUser: function(username) {
