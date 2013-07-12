@@ -4,6 +4,9 @@ Albums.Track = Backbone.Model.extend({
       return image.size === 'extralarge';
     })['#text'];
     this.set('imageUrl', imageUrl);
+    
+    var artistName = this.get('artist')['#text'];
+    this.set('artistName', artistName);
   }
 });
 
