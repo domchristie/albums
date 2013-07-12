@@ -1,6 +1,7 @@
 Albums.ResultsView = Backbone.View.extend({
   template: JST['templates/results'],
   tagName: 'ul',
+  className: 'albums',
   
   initialize: function() {
     this.listenTo(this.collection, 'reset', this.render);

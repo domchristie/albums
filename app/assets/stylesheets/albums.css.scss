@@ -1,0 +1,29 @@
+.albums {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  
+  li {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    padding: 3px;
+    margin: 1em;
+    border: 1px solid #ccc;
+  }
+}
+
+.album-name {
+  position: absolute;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  padding: 3px 6px;
+  background: rgba(0,0,0,.8);
+  text-align: left;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  color: #fff;
+}

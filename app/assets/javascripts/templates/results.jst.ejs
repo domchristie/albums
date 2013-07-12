@@ -2,7 +2,10 @@
   <% if(collection.albums().hasOwnProperty(albumName) && albumName) { %>
     <li>
       <img src="<%= collection.albums()[albumName][0].get('imageUrl') %>" />
-      <%= albumName %>
+      <div class="album-name">
+        <%= collection.albums()[albumName][0].get('artistName') %>:
+        <%= albumName %>
+      </div>
     </li>
   <% } %>
 <% } %>
