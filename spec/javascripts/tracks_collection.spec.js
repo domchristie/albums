@@ -11,4 +11,13 @@ describe('TracksCollection', function() {
       expect(parsed[0].name).toEqual("Single Stripe (Original Mix)");
     });
   });
+  
+  describe('#albums', function() {
+    it('should group the tracks into albums', function() {
+      var tracksCollection = new Albums.TracksCollection(lastfmRecentTrackJSON, { parse: true }),
+          albums = tracksCollection.albums();
+      expect(albums["Fourth: The Golden Eagle"]).toBeTruthy();
+      expect(albums["Welcome To Mali"]).toBeTruthy();
+    })
+  })
 });

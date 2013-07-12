@@ -7,5 +7,11 @@ Albums.TracksCollection = Backbone.Collection.extend({
 
   parse: function(response) {
     return response.recenttracks.track;
+  },
+  
+  albums: function() {
+    return this.groupBy(function(track) {
+      return track.get('album')['#text'];
+    });
   }
 });
