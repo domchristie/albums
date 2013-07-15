@@ -1,5 +1,9 @@
 <script>
   $(function () {
-    Albums.init();
+    Albums.init(
+      <% if current_user %>
+        { currentUser: <%= current_user.active_model_serializer.new(current_user).to_json.html_safe %> }
+      <% end %>
+    );
   });
 </script>
