@@ -2,7 +2,7 @@
   $(function () {
     Albums.init(
       <% if current_user %>
-        { currentUser: <%= current_user.active_model_serializer.new(current_user).to_json.html_safe %> }
+        { currentUser: <%= current_user.active_model_serializer.new(current_user, root: false).to_json.html_safe %> }
       <% end %>
     );
   });
