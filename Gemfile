@@ -6,7 +6,6 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-gem 'sorcery'
 gem 'active_model_serializers'
 
 # Gems used only for assets and not required
