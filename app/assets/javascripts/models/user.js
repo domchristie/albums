@@ -1,1 +1,0 @@
-Albums.User = Backbone.Model.extend();

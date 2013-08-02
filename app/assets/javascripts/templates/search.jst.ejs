@@ -12,11 +12,3 @@
   </form>
 </div>
 <div class="results"></div>
-
-<div class="text-center">
-  <% if(!Albums.currentUser) { %>
-    To see more albums, <a href="/oauth/twitter">sign in with Twitter</a>
-  <% } else { %>
-    You are signed in as <%= Albums.currentUser.get('username') %>
-  <% } %>
-</div>
