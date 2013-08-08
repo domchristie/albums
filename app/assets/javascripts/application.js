@@ -1,6 +1,6 @@
 //= require md5
 //= require jquery
-//= require underscore
+//= require lodash.custom
 //= require backbone
 //= require albums
 //= require_tree .
