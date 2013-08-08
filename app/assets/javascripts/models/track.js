@@ -21,7 +21,7 @@ Albums.TracksCollection = Backbone.Collection.extend({
   
   albums: function() {
     return this.groupBy(function(track) {
-      return track.get('album')['#text'];
+      return track.get('album')['#text'].toLowerCase();
     });
   }
 });
