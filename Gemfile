@@ -23,6 +23,8 @@ end
 gem 'jquery-rails'
 gem 'ejs'
 
+gem 'newrelic_rpm'
+
 group :test, :development do
   gem 'dotenv-rails'
   gem 'jasmine-rails'
