@@ -4,7 +4,7 @@
       <img src="<%= collection.albums()[albumName][0].get('imageUrl') %>" />
       <div class="album-name">
         <%= collection.albums()[albumName][0].get('artistName') %>:
-        <%= albumName %>
+        <%= collection.albums()[albumName][0].get('album')['#text'] %>
       </div>
     </li>
   <% } %>
